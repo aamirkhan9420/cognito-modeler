@@ -1,0 +1,7 @@
+SPDXVersion: SPDX-2.0
+DataLicense: CC0-1.0
+Creator: finos
+PackageName: cognito-modeler
+PackageOriginator: finos
+PackageHomePage: https://github.com/finos/fluxnova-modeler
+PackageLicenseDeclared: MIT

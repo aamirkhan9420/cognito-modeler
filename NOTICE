@@ -1,0 +1,12 @@
+Cognito
+Copyright (c) Camunda Services GmbH.
+Copyright 2025 - FINOS info@finos.org
+
+
+The source code of this project is licensed under the MIT license,
+found in the LICENSE file in the root directory of the source tree.
+
+Certain dependencies (bpmn-js, cmmn-js, dmn-js, @bpmn-io/form-js) are licensed under the bpmn.io license (https://bpmn.io/license).
+
+Find third party notices and license information in the THIRD_PARTY_NOTICES
+file in the root directory of the source tree.

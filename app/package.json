@@ -1,0 +1,32 @@
+{
+  "name": "cognito-modeler",
+  "version": "1.1.1",
+  "description": "Cognito Modeler for BPMN, DMN and CMMN, based on bpmn.io",
+  "private": true,
+  "main": "prod.js",
+  "author": {
+    "name": "FINOS",
+    "email": "cognito@lists.finos.org",
+    "url": "https://fluxnova.finos.org"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@camunda8/sdk": "^8.6.25",
+    "@sentry/integrations": "^7.113.0",
+    "@sentry/node": "^9.0.0",
+    "epipebomb": "^1.0.0",
+    "fast-glob": "^3.3.1",
+    "ids": "^1.0.0",
+    "min-dash": "^4.1.1",
+    "mri": "^1.1.6",
+    "parents": "^1.0.1"
+  },
+  "homepage": "https://github.com/finos/fluxnova-modeler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/finos/fluxnova-modeler"
+  },
+  "optionalDependencies": {
+    "vscode-windows-ca-certs": "^0.3.0"
+  }
+}

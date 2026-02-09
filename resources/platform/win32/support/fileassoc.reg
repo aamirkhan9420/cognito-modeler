@@ -1,0 +1,99 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_CURRENT_USER\Software\Classes]
+
+
+[HKEY_CURRENT_USER\Software\Classes\.bpmn]
+@="CognitoModeler.BPMN"
+
+
+[HKEY_CURRENT_USER\Software\Classes\.cmmn]
+@="CognitoModeler.CMMN"
+
+
+[HKEY_CURRENT_USER\Software\Classes\.dmn]
+@="CognitoModeler.DMN"
+
+
+[HKEY_CURRENT_USER\Software\Classes\.form]
+@="CognitoModeler.FORM"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.BPMN]
+@="BPMN file"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.BPMN\DefaultIcon]
+@="__CWD__,0"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.BPMN\shell]
+@="open"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.BPMN\shell\open]
+@="Open with Cognito Modeler"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.BPMN\shell\open\command]
+@="__CWD__ \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.CMMN]
+@="CMMN file"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.CMMN\DefaultIcon]
+@="__CWD__,0"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.CMMN\shell]
+@="open"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.CMMN\shell\open]
+@="Open with Cognito Modeler"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.CMMN\shell\open\command]
+@="__CWD__ \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.DMN]
+@="DMN file"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.DMN\DefaultIcon]
+@="__CWD__,0"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.DMN\shell]
+@="open"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.DMN\shell\open]
+@="Open with Cognito Modeler"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.DMN\shell\open\command]
+@="__CWD__ \"%1\""
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.FORM]
+@="FORM file"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.FORM\DefaultIcon]
+@="__CWD__,0"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.FORM\shell]
+@="open"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.FORM\shell\open]
+@="Open with Cognito Modeler"
+
+
+[HKEY_CURRENT_USER\Software\Classes\CognitoModeler.FORM\shell\open\command]
+@="__CWD__ \"%1\""
