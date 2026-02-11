@@ -4,28 +4,17 @@
       <stop offset="0%" style="stop-color:#E60000;stop-opacity:1" />
       <stop offset="100%" style="stop-color:#CC0000;stop-opacity:1" />
     </linearGradient>
-    <filter id="shadow">
-      <feGaussianBlur in="SourceAlpha" stdDeviation="8"/>
-      <feOffset dx="0" dy="4" result="offsetblur"/>
-      <feComponentTransfer>
-        <feFuncA type="linear" slope="0.3"/>
-      </feComponentTransfer>
-      <feMerge>
-        <feMergeNode/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
   
-  <!-- Vodafone red circle with gradient -->
-  <circle cx="256" cy="256" r="240" fill="url(#vodafoneGradMain)" filter="url(#shadow)"/>
+  <!-- Vodafone red circle -->
+  <circle cx="256" cy="256" r="240" fill="url(#vodafoneGradMain)"/>
   
   <!-- White inner circle -->
   <circle cx="256" cy="256" r="136" fill="white"/>
   
-  <!-- Speech mark cutout (top right) -->
+  <!-- Speech mark cutout (top right quadrant) -->
   <path d="M 336 144 Q 384 144, 416 192 Q 448 240, 416 288 Q 384 336, 336 336 L 336 144 Z" fill="url(#vodafoneGradMain)"/>
   
-  <!-- Subtle highlight on top -->
+  <!-- Subtle highlight for 3D effect -->
   <ellipse cx="256" cy="176" rx="176" ry="64" fill="white" opacity="0.15"/>
 </svg>

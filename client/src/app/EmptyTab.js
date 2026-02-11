@@ -105,7 +105,7 @@ export default class EmptyTab extends PureComponent {
 
     return (
       <Tab className={ css.EmptyTab }>
-        {<h2 className="welcome-header">Get Started:</h2>}
+        {<h2 className="welcome-header">Build Your Own Process</h2>}
         <div className="welcome-cards">
           {this.renderPlatformColumn()}
           {this.renderLearnMoreColumn()}
