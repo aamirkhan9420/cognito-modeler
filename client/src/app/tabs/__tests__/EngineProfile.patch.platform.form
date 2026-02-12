@@ -1,0 +1,6 @@
+{
+  "type": "default",
+  "components": [],
+  "executionPlatform": "Cognito Platform",
+  "executionPlatformVersion": "1.0.1"
+}

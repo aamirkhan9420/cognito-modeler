@@ -1,0 +1,24 @@
+name: NEW_MAJOR_ISSUE
+permissions:
+  contents: read
+on:
+  workflow_dispatch:  
+#  pull_request:
+#    types: [closed]
+#    branches: [main, release]
+jobs:
+  create_issue:
+    if: github.event.pull_request.merged == true
+    name: Create issue
+    runs-on: ubuntu-latest
+    steps:
+      - run: gh issue create --title "$ISSUE_TITLE" --body "$ISSUE_BODY" --label "ready" --repo $GITHUB_REPOSITORY
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ISSUE_TITLE: "Remove alpha tag from latest engine profile"
+          ISSUE_BODY: |
+            ### What should we do?
+            Mark the latest alpha versions as stable.
+
+            ### Why should we do it?
+            In the next release cycle, the current alpha versions will be relased as stable.

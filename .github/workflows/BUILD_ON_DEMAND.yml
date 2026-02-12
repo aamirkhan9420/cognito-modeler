@@ -1,0 +1,67 @@
+name: BUILD_ON_DEMAND
+on:
+  workflow_dispatch:
+    inputs:
+      buildName:
+        description: 'Name of the build'
+        required: true
+      linkedDependencies:
+        description: 'Dependencies to link from GitHub (format: bpmn-js#develop,dmn-js#9.0.0)'
+        default: ''
+jobs:
+  build:
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest, windows-2022  ]
+    runs-on: ${{ matrix.os }}
+    env:
+      ON_DEMAND: true
+      IS_CI: true
+      BUILD_REF: ${{ github.event.pull_request.number || github.ref_name }}
+      BUILD_NUMBER: ${{ github.run_number }}-${{ github.run_id }}
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Use Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Get version (sets APP_VERSION)
+      id: get-version
+      run: bash ./scripts/get_version_for_artifact_name.sh
+
+    - name: Link dependencies
+      env:
+        LINKED_DEPENDENCIES: "${{ github.event.inputs.linkedDependencies }}"
+      run: npm run link-dependencies
+
+    - name: Build distro (Linux)
+      if: ${{ runner.OS == 'Linux' }}
+      env:
+        ELECTRON_GET_USE_PROXY: true
+      run: npm run build -- --linux
+
+    - name: Build distro (MacOS)
+      if: ${{ runner.os == 'macOS' }}
+      env:
+        ELECTRON_GET_USE_PROXY: true
+      run: npm run build -- --mac
+
+    - name: Build distro (Windows)
+      if: ${{ runner.os == 'Windows' }}
+      env:
+        ELECTRON_GET_USE_PROXY: true
+      run: npm run build -- --win
+
+    - name: Upload build artifacts ${{ matrix.os }}
+      uses: actions/upload-artifact@v4
+      with:
+        name: cognito-modeler-${{ steps.get-version.outputs.APP_VERSION }}-${{ matrix.os }}
+        path: dist

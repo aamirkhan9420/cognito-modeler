@@ -1,0 +1,10 @@
+{
+	"type": "default",
+	"components": [],
+	"executionPlatform": "Cognito Platform",
+	"executionPlatformVersion": "1.0.0",
+	"exporter": {
+		"name": "Cognito Modeler",
+		"version": "5.33.0-dev"
+	}
+}

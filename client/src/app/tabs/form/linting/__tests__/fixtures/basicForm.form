@@ -1,0 +1,44 @@
+{
+  "type": "default",
+  "id": "formtest",
+  "exporter": {
+    "name": "Cognito Modeler",
+    "version": "5.34.0"
+  },
+  "components": [
+    {
+      "label": "Creditor",
+      "key": "creditor",
+      "type": "textfield",
+      "validate": {
+        "required": true
+      },
+      "id": "Field_0882m7g"
+    },
+    {
+      "label": "Invoice Number",
+      "description": "An invoice number in the format: C-123.",
+      "key": "invoiceNumber",
+      "type": "textfield",
+      "validate": {
+        "pattern": "^C-[0-9]+$"
+      },
+      "id": "Field_1qwolup"
+    },
+    {
+      "label": "Approved By",
+      "key": "approvedBy",
+      "type": "textfield",
+      "id": "Field_10j7qgt"
+    },
+    {
+      "label": "Reset",
+      "action": "reset",
+      "key": "reset",
+      "type": "button",
+      "id": "Field_1oef7xr"
+    }
+  ],
+  "executionPlatform": "Cognito Platform",
+  "executionPlatformVersion": "1.0"
+}

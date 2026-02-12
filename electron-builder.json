@@ -1,0 +1,78 @@
+{
+  "appId": "org.finos.cognito.CognitoModeler",
+  "productName": "Cognito Modeler",
+  "files": [
+    {
+      "filter": [
+        "**",
+        "!**/__tests__",
+        "!test",
+        "!dev.js"
+      ]
+    }
+  ],
+  "afterPack": "./tasks/after-pack.js",
+  "afterSign": "./tasks/after-sign.js",
+  "win": {
+    "target": [
+      {
+        "target": "zip",
+        "arch": [ "x64", "ia32" ]
+      }
+    ]
+  },
+  "linux": {
+    "category": "Development",
+    "target": [
+      {
+        "target": "tar.gz",
+        "arch": [ "x64" ]
+      }
+    ]
+  },
+  "mac": {
+    "hardenedRuntime": true,
+    "entitlements": "./build/entitlements.mac.inherit.plist",
+    "target": [
+      {
+        "target": "dmg",
+        "arch": [ "x64", "arm64" ]
+      },
+      {
+        "target": "zip",
+        "arch": [ "x64", "arm64" ]
+      }
+    ]
+  },
+  "fileAssociations": [
+    {
+      "ext": "bpmn",
+      "name": "CognitoModeler.BPMN",
+      "description": "BPMN file",
+      "role": "Editor",
+      "mimeType": "application/bpmn"
+    },
+    {
+      "ext": "dmn",
+      "name": "CognitoModeler.DMN",
+      "description": "DMN file",
+      "role": "Editor",
+      "mimeType": "application/dmn"
+    },
+    {
+      "ext": "cmmn",
+      "name": "CognitoModeler.CMMN",
+      "description": "CMMN file",
+      "role": "Editor",
+      "mimeType": "application/cmmn"
+    },
+    {
+      "ext": "form",
+      "name": "CognitoModeler.FORM",
+      "description": "FORM file",
+      "role": "Editor",
+      "mimeType": "application/camunda-form"
+    }
+  ],
+  "npmArgs": "--workspaces=false"
+}
