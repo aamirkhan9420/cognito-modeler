@@ -14,9 +14,9 @@ import { Overlay, Section } from '../../shared/ui';
 
 import { ReleaseInfo } from './ReleaseInfo';
 
-const RELEASE_NOTES_LINK = 'https://github.com/finos/fluxnova-modeler/releases';
-const DOCS_LINK = 'https://docs.fluxnova.finos.org/modeler/?utm_source=modeler&utm_medium=referral';
-const CHANGELOG_LINK = 'https://github.com/finos/fluxnova-modeler/blob/main/CHANGELOG.md';
+const RELEASE_NOTES_LINK = 'https://github.com/finos/cognito-modeler/releases';
+const DOCS_LINK = 'https://docs.cognito.vodafone.com/modeler/?utm_source=modeler&utm_medium=referral';
+const CHANGELOG_LINK = 'https://github.com/finos/cognito-modeler/blob/main/CHANGELOG.md';
 
 const OFFSET = { right: 0 };
 
