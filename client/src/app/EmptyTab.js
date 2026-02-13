@@ -86,7 +86,7 @@ export default class EmptyTab extends PureComponent {
           <h3>Learn more</h3>
           <div className="article relative">
             <p>Introduction to Cognito</p>
-            <a href="https://docs.fluxnova.finos.org/get-started/quick-start">Getting Started</a>
+            <a href="https://docs.cognito.vodafone.com/get-started/quick-start">Getting Started</a>
           </div>
           <div className="article">
             <p>About Modeler 1</p>
@@ -94,7 +94,7 @@ export default class EmptyTab extends PureComponent {
           </div>
           <div className="article">
             <p>Model your first diagram</p>
-            <a href="https://docs.fluxnova.finos.org/">Cognito Docs</a>
+            <a href="https://docs.cognito.vodafone.com/">Cognito Docs</a>
           </div>
         </div>
       </div>
