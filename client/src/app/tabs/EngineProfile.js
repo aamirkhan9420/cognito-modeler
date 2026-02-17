@@ -29,7 +29,7 @@ import { Fill } from '../slot-fill';
 import { ENGINES, ENGINE_LABELS, ENGINE_PROFILES, getLatestStable } from '../../util/Engines';
 
 const HELP_LINKS = {
-  [ ENGINES.COGNITO ]: 'https://docs.fluxnova.finos.org/', // URL not changed
+  [ ENGINES.COGNITO ]: 'https://docs.cognito.vodafone.com/', // URL not changed
   [ ENGINES.CLOUD ]: 'https://docs.camunda.io/?utm_source=modeler&utm_medium=referral'
 };
 

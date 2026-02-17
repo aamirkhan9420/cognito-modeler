@@ -14,9 +14,27 @@
   left: 0;
 
   h2.welcome-header {
-    font-size: 18px;
-    font-weight: 400;
-    margin-bottom: 35px;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 50px;
+    color: hsl(0, 100%, 45%);
+    letter-spacing: 0.5px;
+    text-align: center;
+    text-transform: capitalize;
+    position: relative;
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: hsl(0, 100%, 45%);
+      border-radius: 2px;
+      box-shadow: 0 2px 8px hsla(0, 100%, 45%, 0.4);
+    }
   }
 
   /* <carbon-override> */
@@ -44,22 +62,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: var(--color-grey-225-10-97);
+    background: linear-gradient(135deg, hsl(0, 0%, 99%) 0%, hsl(0, 5%, 98%) 100%);
     color: var(--color-grey-225-10-15);
-    border-radius: 10px;
+    border-radius: 16px;
     width: 280px;
-    padding: 20px;
+    padding: 25px;
     position: relative;
+    border: 2px solid hsl(0, 20%, 90%);
+    box-shadow: 0 6px 20px hsla(0, 100%, 45%, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px hsla(0, 100%, 45%, 0.25);
+      border-color: hsl(0, 100%, 45%);
+    }
 
     h3 {
-      font-size: 16px;
-      font-weight: 400;
+      font-size: 22px;
+      font-weight: 800;
       white-space: nowrap;
+      color: hsl(0, 100%, 45%);
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      filter: drop-shadow(0 2px 4px hsla(0, 100%, 45%, 0.4));
     }
 
     a {
-      color: var(--color-blue-205-100-50);
+      color: hsl(0, 100%, 45%);
       font-weight: 14px;
+      
+      &:hover {
+        color: hsl(0, 100%, 40%);
+      }
     }
 
     .relative {
@@ -76,7 +111,9 @@
     }
 
     .engine-icon {
-      color: var(--color-grey-225-10-35);
+      color: hsl(0, 100%, 45%);
+      filter: drop-shadow(0 3px 6px hsla(0, 100%, 45%, 0.5));
+      transform: scale(1.1);
     }
 
     .engine-info {
@@ -84,7 +121,27 @@
         display: flex;
         flex-direction: row;
         align-items: center;
-        margin-bottom: 10px;
+        justify-content: center;
+        margin-bottom: 15px;
+        padding: 15px 25px;
+        background: linear-gradient(135deg, hsla(0, 100%, 45%, 0.1) 0%, hsla(0, 100%, 50%, 0.1) 100%);
+        border-radius: 12px;
+        border: 2px solid hsl(0, 100%, 45%);
+        box-shadow: 0 4px 15px hsla(0, 100%, 45%, 0.3), inset 0 1px 0 hsla(0, 0%, 100%, 0.5);
+        position: relative;
+        
+        &::before {
+          content: '';
+          position: absolute;
+          inset: -2px;
+          border-radius: 12px;
+          padding: 2px;
+          background: hsl(0, 100%, 45%);
+          -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+          -webkit-mask-composite: xor;
+          mask-composite: exclude;
+          opacity: 0.6;
+        }
       }
 
       text-align: center;
@@ -111,20 +168,31 @@
 
     button {
       margin: 0 auto 1em auto;
-      background-color: var(--color-blue-205-100-50);
-      color:white;
-      font-weight: normal;
+      background: hsl(0, 100%, 45%);
+      color: white;
+      font-weight: 600;
+      font-size: 14px;
       display: flex;
       align-items: center;
+      justify-content: center;
       width: 200px;
-      height:42px;
-      border: none;
-      border-radius: 4px;
+      height: 44px;
+      border: 2px solid hsl(0, 100%, 42%);
+      border-radius: 10px;
       padding: 10px;
-      box-shadow: none;
+      box-shadow: 0 4px 12px hsla(0, 100%, 45%, 0.4);
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      letter-spacing: 0.3px;
 
       &:hover {
-        background-color: var(--color-blue-205-100-45);
+        background: hsl(0, 100%, 40%);
+        box-shadow: 0 6px 20px hsla(0, 100%, 45%, 0.5);
+        transform: translateY(-2px);
+      }
+
+      &:active {
+        transform: translateY(0);
+        box-shadow: 0 2px 8px hsla(0, 100%, 45%, 0.3);
       }
 
       svg {

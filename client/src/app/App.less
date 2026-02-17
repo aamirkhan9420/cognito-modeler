@@ -2,15 +2,26 @@
   height: 100%;
   display: flex;
   flex-direction: column;
+  background: linear-gradient(135deg, hsl(0, 10%, 98%) 0%, hsl(0, 15%, 99%) 100%);
 
   .tabs {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
+    border-radius: 12px 12px 0 0;
+    overflow: hidden;
+    box-shadow: 0 -3px 15px hsla(0, 100%, 45%, 0.15);
+    border: 2px solid hsl(0, 20%, 90%);
+    border-bottom: none;
   }
 
   .main {
     flex-grow: 1;
+    background: var(--color-white);
+    border-radius: 12px;
+    margin: 10px;
+    box-shadow: 0 4px 20px hsla(0, 100%, 45%, 0.2);
+    border: 2px solid hsl(0, 20%, 90%);
   }
 
 }

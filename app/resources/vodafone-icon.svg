@@ -1,0 +1,29 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <!-- Vodafone logo with large visible speech mark cutout -->
+  
+  <!-- Outer red circle -->
+  <circle cx="128" cy="128" r="118" fill="#E60000"/>
+  
+  <!-- Inner white circle -->
+  <circle cx="128" cy="128" r="66" fill="white"/>
+  
+  <!-- Large speech mark cutout - white overlay on red ring in upper left -->
+  <!-- This creates a very visible comma/apostrophe shape -->
+  
+  <!-- Main circular head of the speech mark -->
+  <ellipse cx="70" cy="70" rx="45" ry="50" fill="white"/>
+  
+  <!-- Tail curving upward (larger and more visible) -->
+  <path d="M 50 40
+           Q 40 20, 35 5
+           L 60 0
+           Q 65 15, 72 30
+           Q 78 42, 75 55
+           L 60 58
+           Q 52 48, 50 40
+           Z" 
+        fill="white"/>
+  
+  <!-- Additional tail thickness -->
+  <ellipse cx="55" cy="25" rx="12" ry="20" fill="white" transform="rotate(-25 55 25)"/>
+</svg>

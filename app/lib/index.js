@@ -425,6 +425,8 @@ app.createEditorWindow = function() {
     show: false,
     minWidth: MINIMUM_SIZE.width,
     minHeight: MINIMUM_SIZE.height,
+    icon: path.join(__dirname, '../resources/vodafone-icon.png'),
+    title: 'Cognito Modeler',
     webPreferences: {
       preload: path.resolve(__dirname, '../preload/preload.js'),
       contextIsolation: true,
@@ -434,7 +436,7 @@ app.createEditorWindow = function() {
   };
 
   if (process.platform === 'linux') {
-    windowOptions.icon = path.join(__dirname + '/../resources/favicon.png');
+    windowOptions.icon = path.join(__dirname + '/../resources/vodafone-icon.png');
   }
 
   const mainWindow = app.mainWindow = new BrowserWindow(windowOptions);

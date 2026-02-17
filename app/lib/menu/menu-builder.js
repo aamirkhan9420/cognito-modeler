@@ -588,7 +588,7 @@ class MenuBuilder {
     const topPart = [
       {
         label: 'Documentation',
-        click: () => browserOpen('https://docs.fluxnova.finos.org/modeler/')
+        click: () => browserOpen('https://docs.cognito.vodafone.com/modeler/')
       },
       {
         label: 'Keyboard Shortcuts',

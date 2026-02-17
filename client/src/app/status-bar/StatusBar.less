@@ -1,17 +1,17 @@
 :root {
-  --status-bar-background-color: var(--color-grey-225-10-85);
-  --status-bar-border-color: var(--color-grey-225-10-75);
-  --status-bar-font-color: var(--color-grey-225-10-15);
-  --status-bar-icon-font-color: var(--color-grey-225-10-35);
-  --status-bar-focus-background-color: var(--color-grey-225-10-80);
-  --status-bar-hover-background-color: var(--color-grey-225-10-80);
-  --status-bar-active-background-color: var(--color-grey-225-10-75);
-  --status-bar-active-hover-background-color: var(--color-grey-225-10-75);
-  --status-bar-active-font-color: var(--color-grey-225-10-15);
-  --status-bar-active-icon-font-color: var(--color-grey-225-10-35);
+  --status-bar-background-color: hsl(0, 100%, 45%);
+  --status-bar-border-color: hsl(0, 100%, 40%);
+  --status-bar-font-color: hsl(0, 0%, 100%);
+  --status-bar-icon-font-color: hsl(0, 0%, 100%);
+  --status-bar-focus-background-color: hsl(0, 100%, 40%);
+  --status-bar-hover-background-color: hsl(0, 100%, 40%);
+  --status-bar-active-background-color: hsl(0, 100%, 38%);
+  --status-bar-active-hover-background-color: hsl(0, 100%, 38%);
+  --status-bar-active-font-color: hsl(0, 0%, 100%);
+  --status-bar-active-icon-font-color: hsl(0, 0%, 100%);
   --status-bar-font-size: var(--font-size-default);
-  --status-bar-primary-background-color: var(--color-blue-205-100-45);
-  --status-bar-primary-hover-background-color: var(--color-blue-205-100-40);
+  --status-bar-primary-background-color: hsl(0, 0%, 100%);
+  --status-bar-primary-hover-background-color: hsl(0, 5%, 95%);
 }
 
 :local(.StatusBar) {
@@ -24,10 +24,12 @@
   padding: 0;
 
   background-color: var(--status-bar-background-color);
-  border-top: 1px solid var(--status-bar-border-color);
+  border-top: 3px solid var(--status-bar-border-color);
   color: var(--status-bar-font-color);
   font-size: var(--status-bar-font-size);
+  font-weight: 600;
   line-height: 28px;
+  box-shadow: 0 -2px 8px hsla(0, 100%, 45%, 0.3);
 
   .status-bar__file {
     flex: 1;
@@ -103,11 +105,15 @@
 
   .btn--primary {
     background-color: var(--status-bar-primary-background-color);
-    color: var(--color-white);
+    color: hsl(0, 100%, 45%);
+    font-weight: 700;
+    border-radius: 4px;
+    margin: 4px;
   }
 
   .btn--primary:hover,
   .btn--primary:focus {
     background-color: var(--status-bar-primary-hover-background-color);
+    color: hsl(0, 100%, 40%);
   }
 }

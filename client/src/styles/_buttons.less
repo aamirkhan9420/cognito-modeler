@@ -1,21 +1,24 @@
 .btn {
   min-width: 120px;
-  height: 35px;
-  border-radius: 3px;
-  font-size: 13px;
-  font-weight: bold;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
   font-stretch: normal;
   font-style: normal;
   font-family: inherit;
   line-height: normal;
-  letter-spacing: normal;
+  letter-spacing: 0.5px;
   text-align: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
 
   &:focus {
-    box-shadow: var(--focus-shadow);
-    border: solid 1px var(--color-blue-205-100-50);
+    box-shadow: 0 0 0 4px hsla(0, 100%, 45%, 0.3);
+    border: 2px solid hsl(0, 100%, 45%);
     outline: none;
   }
 
@@ -27,47 +30,60 @@
 
 .btn-primary {
   color: var(--color-white);
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.2);
-  border: solid 1px var(--color-blue-205-100-45);
-  background-color: var(--color-blue-205-100-50);
+  box-shadow: 0 4px 12px 0 hsla(0, 100%, 45%, 0.4);
+  border: 2px solid hsl(0, 100%, 42%);
+  background: hsl(0, 100%, 45%);
 
   &:hover {
-    border: solid 1px var(--color-blue-205-100-50);
-    background-color: var(--color-blue-205-100-45);
+    border: 2px solid hsl(0, 100%, 45%);
+    background: hsl(0, 100%, 40%);
+    box-shadow: 0 6px 20px 0 hsla(0, 100%, 45%, 0.5);
+    transform: translateY(-2px);
   }
 
   &:active {
-    border: solid 1px var(--color-blue-205-100-45);
-    background-color: var(--color-blue-205-100-50);
+    border: 2px solid hsl(0, 100%, 38%);
+    background: hsl(0, 100%, 38%);
+    transform: translateY(0);
+    box-shadow: 0 2px 8px 0 hsla(0, 100%, 45%, 0.3);
   }
 
   &:disabled {
     box-shadow: none;
-    border: none;
-    background-color: var(--color-grey-225-10-75);
+    border: 2px solid var(--color-grey-225-10-75);
+    background: var(--color-grey-225-10-75);
     color: var(--color-grey-225-10-15);
+    transform: none;
+    cursor: not-allowed;
   }
 }
 
 .btn-secondary {
   color: var(--color-grey-225-10-15);
-  box-shadow: 0 2px 2px 0 var(--color-black-opacity-10);
-  border: solid 1px var(--color-grey-225-10-75);
-  background-color: var(--color-grey-225-10-95);
+  box-shadow: 0 3px 8px 0 hsla(280, 25%, 70%, 0.3);
+  border: 2px solid hsl(280, 25%, 70%);
+  background-color: var(--color-white);
 
   &:hover {
-    background-color: var(--color-grey-225-10-90);
+    background: linear-gradient(135deg, hsl(270, 40%, 97%) 0%, hsl(280, 35%, 95%) 100%);
+    border-color: hsl(280, 30%, 60%);
+    box-shadow: 0 5px 15px 0 hsla(280, 25%, 70%, 0.4);
+    transform: translateY(-2px);
   }
 
   &:active {
-    background-color: var(--color-grey-225-10-75);
+    background-color: var(--color-grey-225-10-90);
+    transform: translateY(0);
+    box-shadow: 0 2px 6px 0 hsla(280, 25%, 70%, 0.3);
   }
 
   &:disabled {
     box-shadow: none;
-    border: solid 1px var(--color-grey-225-10-75);
+    border: 2px solid var(--color-grey-225-10-75);
     background-color: var(--color-grey-225-10-95);
     color: var(--color-grey-225-10-75);
+    transform: none;
+    cursor: not-allowed;
   }
 
 }

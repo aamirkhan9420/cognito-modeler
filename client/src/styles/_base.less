@@ -5,13 +5,13 @@
 body {
   font-family: var(--font-family);
   font-size: var(--font-size-default);
-  background-color: var(--color-white);
+  background: linear-gradient(135deg, hsl(0, 10%, 98%) 0%, hsl(0, 15%, 99%) 100%);
   overflow: hidden;
 }
 
 :root {
-  --focus-outline-color: var(--color-blue-205-100-40);
-  --focus-shadow: 0 0 0 2px var(--focus-outline-color);
+  --focus-outline-color: hsl(0, 100%, 45%);
+  --focus-shadow: 0 0 0 3px hsla(0, 100%, 45%, 0.3);
 }
 
 :focus {
@@ -20,9 +20,16 @@ body {
 
 :focus-visible {
   outline: 2px solid var(--focus-outline-color);
+  outline-offset: 2px;
 }
 
 a {
   color: var(--link-color);
-  text-decoration: underline;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  
+  &:hover {
+    text-decoration: underline;
+    color: hsl(0, 100%, 40%);
+  }
 }
