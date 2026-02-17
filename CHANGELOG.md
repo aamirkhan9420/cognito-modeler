@@ -14,7 +14,7 @@ All notable changes to the [Cognito Modeler](https://github.com/finos/fluxnova-m
 
 ## 1.1.0
 
-- Updated the "Learn more" link in the change execution platform pop-up to point to https://docs.fluxnova.finos.org/
+- Updated the "Learn more" link in the change execution platform pop-up to point to https://docs.cognito.vodafone.com/
 - Fixed lint errors causing `npm run lint` script to fail
 - Fixed issue where running `npm run build` locally multiple times continually appends "-dev" to build artifact names
 - Fixed issue where RELEASE workflow creates multiple draft releases with slightly different names

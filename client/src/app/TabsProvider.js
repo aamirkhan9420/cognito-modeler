@@ -63,18 +63,18 @@ import { getDefaultVersion } from './tabs/EngineProfile';
 const BPMN_HELP_MENU = [
   {
     label: 'BPMN 2.0 Tutorial',
-    action: 'https://docs.fluxnova.finos.org/modeler/bpmn'
+    action: 'https://docs.cognito.vodafone.com/modeler/bpmn'
   },
   {
     label: 'BPMN Modeling Reference',
-    action: 'https://docs.fluxnova.finos.org/reference/bpmn20'
+    action: 'https://docs.cognito.vodafone.com/reference/bpmn20'
   }
 ];
 
 const DMN_HELP_MENU = [
   {
     label: 'DMN Tutorial',
-    action: 'https://docs.fluxnova.finos.org/modeler/dmn'
+    action: 'https://docs.cognito.vodafone.com/modeler/dmn'
   }
 ];
 

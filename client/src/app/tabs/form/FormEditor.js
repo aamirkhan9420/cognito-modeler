@@ -736,8 +736,8 @@ function getDocumentationRef(field) {
   }
 
   if (field.type === 'default') {
-    return 'https://docs.fluxnova.finos.org/modeler/forms'; // URL, do not change
+    return 'https://docs.cognito.vodafone.com/modeler/forms'; // URL, do not change
   }
 
-  return 'https://docs.fluxnova.finos.org/modeler/forms'; // URL, do not change
+  return 'https://docs.cognito.vodafone.com/modeler/forms'; // URL, do not change
 }
