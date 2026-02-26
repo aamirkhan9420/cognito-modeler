@@ -17,7 +17,7 @@
     font-size: 32px;
     font-weight: 700;
     margin-bottom: 50px;
-    color: hsl(0, 100%, 45%);
+    color: #E60000;
     letter-spacing: 0.5px;
     text-align: center;
     text-transform: capitalize;
@@ -31,9 +31,8 @@
       transform: translateX(-50%);
       width: 80px;
       height: 4px;
-      background: hsl(0, 100%, 45%);
+      background: #E60000;
       border-radius: 2px;
-      box-shadow: 0 2px 8px hsla(0, 100%, 45%, 0.4);
     }
   }
 
@@ -62,38 +61,34 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: linear-gradient(135deg, hsl(0, 0%, 99%) 0%, hsl(0, 5%, 98%) 100%);
     color: var(--color-grey-225-10-15);
     border-radius: 16px;
     width: 280px;
     padding: 25px;
     position: relative;
-    border: 2px solid hsl(0, 20%, 90%);
-    box-shadow: 0 6px 20px hsla(0, 100%, 45%, 0.15);
+    border: 2px solid #E60000;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
       transform: translateY(-5px);
-      box-shadow: 0 10px 30px hsla(0, 100%, 45%, 0.25);
-      border-color: hsl(0, 100%, 45%);
+      border-color: #E60000;
     }
 
     h3 {
       font-size: 22px;
       font-weight: 800;
       white-space: nowrap;
-      color: hsl(0, 100%, 45%);
+      color: #E60000;
       letter-spacing: 1.2px;
       text-transform: uppercase;
-      filter: drop-shadow(0 2px 4px hsla(0, 100%, 45%, 0.4));
     }
 
     a {
-      color: hsl(0, 100%, 45%);
+      color: #E60000;
       font-weight: 14px;
       
       &:hover {
-        color: hsl(0, 100%, 40%);
+        color: #E60000;
       }
     }
 
@@ -111,8 +106,7 @@
     }
 
     .engine-icon {
-      color: hsl(0, 100%, 45%);
-      filter: drop-shadow(0 3px 6px hsla(0, 100%, 45%, 0.5));
+      color: #E60000;
       transform: scale(1.1);
     }
 
@@ -124,10 +118,8 @@
         justify-content: center;
         margin-bottom: 15px;
         padding: 15px 25px;
-        background: linear-gradient(135deg, hsla(0, 100%, 45%, 0.1) 0%, hsla(0, 100%, 50%, 0.1) 100%);
         border-radius: 12px;
-        border: 2px solid hsl(0, 100%, 45%);
-        box-shadow: 0 4px 15px hsla(0, 100%, 45%, 0.3), inset 0 1px 0 hsla(0, 0%, 100%, 0.5);
+        border: 2px solid #E60000;
         position: relative;
         
         &::before {
@@ -136,7 +128,7 @@
           inset: -2px;
           border-radius: 12px;
           padding: 2px;
-          background: hsl(0, 100%, 45%);
+          background: #E60000;
           -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
           -webkit-mask-composite: xor;
           mask-composite: exclude;
@@ -168,7 +160,7 @@
 
     button {
       margin: 0 auto 1em auto;
-      background: hsl(0, 100%, 45%);
+      background: #E60000;
       color: white;
       font-weight: 600;
       font-size: 14px;
@@ -177,22 +169,19 @@
       justify-content: center;
       width: 200px;
       height: 44px;
-      border: 2px solid hsl(0, 100%, 42%);
+      border: 2px solid #E60000;
       border-radius: 10px;
       padding: 10px;
-      box-shadow: 0 4px 12px hsla(0, 100%, 45%, 0.4);
       transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       letter-spacing: 0.3px;
 
       &:hover {
-        background: hsl(0, 100%, 40%);
-        box-shadow: 0 6px 20px hsla(0, 100%, 45%, 0.5);
+        background: rgb(189, 0, 0);
         transform: translateY(-2px);
       }
 
       &:active {
         transform: translateY(0);
-        box-shadow: 0 2px 8px hsla(0, 100%, 45%, 0.3);
       }
 
       svg {

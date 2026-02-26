@@ -76,13 +76,13 @@ export function EngineProfile(props) {
           onChange={ handleChange }
         />
       }
-      <button
+      {/* <button
         className={ classnames('btn', { 'btn--active': open }) }
         onClick={ toggle } ref={ buttonRef }
         title={ handleChange ? 'Change execution platform' : 'Display execution platform information' }
       >
         { label }
-      </button>
+      </button> */}
     </Fill>
   );
 }

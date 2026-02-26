@@ -113,14 +113,14 @@ export class VersionInfo extends PureComponent {
 
     return (
       <Fragment>
-        <Fill slot="status-bar__app" group="9_version-info">
+        {/* <Fill slot="status-bar__app" group="9_version-info">
           <button
             className={ classNames('btn', { 'btn--active': open }) }
             title="Toggle version info"
             onClick={ toggle }
             ref={ buttonRef }
           >{ version } {unread && <UnreadMarker />}</button>
-        </Fill>
+        </Fill> */}
         {
           open && <VersionInfoOverlay
             anchor={ buttonRef.current } onClose={ close } version={ version }

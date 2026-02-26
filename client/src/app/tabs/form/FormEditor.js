@@ -652,7 +652,7 @@ export class FormEditor extends CachedComponent {
         type: 'default'
       },
       propertiesPanel: {
-        getDocumentationRef
+        // getDocumentationRef
       },
       layout: getInitialFormLayout(layout),
       exporter: {

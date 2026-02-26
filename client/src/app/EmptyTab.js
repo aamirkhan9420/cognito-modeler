@@ -108,7 +108,7 @@ export default class EmptyTab extends PureComponent {
         {<h2 className="welcome-header">Build Your Own Process</h2>}
         <div className="welcome-cards">
           {this.renderPlatformColumn()}
-          {this.renderLearnMoreColumn()}
+          {/* {this.renderLearnMoreColumn()} */}
         </div>
       </Tab>
     );
